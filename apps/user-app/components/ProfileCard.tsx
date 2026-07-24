@@ -1,19 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 export const ProfileCard = ({ name, imgSrc, balance }: { name: string; imgSrc: string; balance: number }) => {
     const [loading, setLoading] = useState(false);
     const [loading1, setLoading1] = useState(false);
+    const router = useRouter();
 
     const handleRedirect = () => {
         setLoading(true);
-        redirect('/p2p-transfer');
+        router.push('/p2p-transfer');
     };
     const Redirect = () => {
         setLoading1(true);
-        redirect('/transfer');
+        router.push('/transfer');
     };
 
     return (

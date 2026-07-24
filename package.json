@@ -1,5 +1,5 @@
 {
-  "name": "paytm",
+  "name": "pocketpay",
   "private": true,
   "scripts": {
     "build": "turbo build",

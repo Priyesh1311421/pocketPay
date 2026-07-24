@@ -1,0 +1,13 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "\\nimport": true,
+        "getServerSession": true,
+        "redirect": true,
+        "authOptions": true,
+        "\\n\\nexport": true,
+        "\\n": true,
+        "session?.user?.id": true,
+        "\\\"flex": true,
+        "item.step": true
+    }
+}

@@ -37,7 +37,7 @@ export const Appbar = ({
                     animate="visible"
                 >
                     <div className="text-lg flex flex-col justify-center font-bold cursor-pointer" onClick={home}>
-                        PayTM 
+                        PocketPay
                     </div>
                 </motion.div>
 
