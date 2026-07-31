@@ -21,8 +21,13 @@ async function getPendingTransaction(token: string) {
   return transaction;
 }
 
-export default async function ConfirmPage({ params }: { params: { token: string } }) {
-  const transaction = await getPendingTransaction(params.token);
+export default async function ConfirmPage({
+  params,
+}: {
+  params: Promise<{ token: string }>;
+}) {
+  const { token } = await params;
+  const transaction = await getPendingTransaction(token);
 
   if (!transaction) {
     redirect("/transfer");
